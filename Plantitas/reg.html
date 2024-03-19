@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Plantitas</title>
+    <link href="css/styles.css" rel="stylesheet"></link>
+    <script src="js/script.js"></script>
+    <script src="js/cancel.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body>
+
+        <!--HEADER-->
+
+    <div style="background-color: #75a542;">
+        <p class="inibt" style="float: right;"><a href="login.html">Iniciar Sesión</a></p>
+        <p class="regbt" style="float: right;"><a href="reg.html">Registro</a></p>
+        <a href="index.html">
+            <figure style="margin: 0 auto;">
+                <img style="margin-left:12%;" width="15%" src="img/PlanTitas.png">
+            </figure>
+        </a>
+    </div>
+    
+
+
+    <div style="background-color: #97d357;">
+            <form action="search.html" method="post" style="text-align: center;padding: 15px;">
+                <input type="text" id="searchInput" placeholder="Introduce un término...">
+                <input style="padding: 13px;width: auto;border-top-left-radius: 0;border-bottom-left-radius: 0;border: solid 2px #587c32;background-color: #75a542;color: white;border-top-right-radius: 30px;border-bottom-right-radius: 30px;" class="buscar" type="submit" value="Buscar...">
+            </form>
+    </div>
+
+
+    <div style="background-color:#75a542;">
+
+        <table style="padding-top: 5px;padding-bottom: 5px;">
+            <tr>
+                <td>
+                    <h2 class="menuico" style="margin: 0;margin-right: 0px;margin-left: 30px;">
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </h2>
+                </td>
+                <td>
+                    <h2 class="menuico" style="margin: 0;margin-right: 0px">
+                        <a href="products.html">
+                            Productos
+                        </a>
+                    </h2>
+                </td>
+                <td>
+                    <h2 class="menuico" style="margin: 0;margin-right: 30px">
+                        <a href="aboutus.html">
+                            Sobre nosotros
+                        </a>
+                    </h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+        <!--BODY-->
+
+        <div style="background-image:url(img/fondocultivo.jpg);padding-top: 30px;padding-bottom: 60px;background-repeat: no-repeat;background-size:cover;">
+            <table width="50%" style="margin: 0 auto;border-collapse: collapse;">
+                <tr>
+                    <td>
+                        <h1 style="color: #a4e65f;padding: 20px;background-color: #5b8034;border-top-left-radius: 30px;border-top-right-radius: 30px;margin:0;box-shadow: 10px 5px 30px black;">
+                            Plantitas es la nueva forma de administrar tus cultivos de Hortalizas
+                        </h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="registered.html" method="post" autocomplete="off" style="text-align: center;padding: 40px;padding-bottom: 40px;background-color:#97d357;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;box-shadow: 10px 5px 30px black;">
+                            <p style="font-family: Junegull;">USUARIO:</p>
+                            <input type="text" id="nombre" placeholder="Introduce tu nombre" required style="border-radius: 30px;margin: 10px;background-color: rgb(197, 255, 200);color: #5b8034;border: 2px solid #5b8034;"><br>
+                            <p style="font-family: Junegull;">CORREO:</p>
+                            <input type="email" id="email" placeholder="Introduce tu correo" required style="border-radius: 30px;margin: 10px;background-color: rgb(197, 255, 200);color: #5b8034;border: 2px solid #5b8034;"><br>
+                            <p style="font-family: Junegull;">CONTRASEÑA:</p>
+                            <input type="password" id="password" placeholder="Introduce tu contraseña" required style="border-radius: 30px;margin: 10px;background-color: rgb(197, 255, 200);color: #5b8034;border: 2px solid #5b8034;"><br>
+                            <p style="font-family: Junegull;">TELÉFONO:</p>
+                            <input type="number" id="tel" placeholder="Introduce tu telefono" required style="border-radius: 30px;margin: 10px;background-color: rgb(197, 255, 200);color: #5b8034;border: 2px solid #5b8034;"><br>
+                            <p style="font-family: Junegull;">GÉNERO:</p>
+                            <select id="genero" style="border-radius: 30px;margin: 10px;background-color: rgb(197, 255, 200);color: #5b8034;border: 2px solid #5b8034;">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select><br>
+                            <p style="font-family: Junegull;">FECHA DE NACIMIENTO:</p>
+                            <input type="date" id="fechaNacimiento" required style="border-radius: 30px;margin: 10px;background-color: rgb(197, 255, 200);color: #5b8034;border: 2px solid #5b8034;"><br>
+                            <p style="font-family: Junegull;">GRUPO SANGUÍNEO:</p>
+                            <select id="grupoSanguineo" style="border-radius: 30px;margin: 10px;background-color: rgb(197, 255, 200);color: #5b8034;border: 2px solid #5b8034;">
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select><br>
+                            <input type="submit" value="REGISTRARSE" style="border-radius: 30px;margin: 10px;background-color: #75a542;color: #a4e65f;font-family: junegull;border: 0px solid;">
+                            <button id="cancelarBtn" type="button" style="border-radius: 30px;margin: 10px;background-color: #ff6347;color: white;font-family: junegull;border: 0px solid;">CANCELAR</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+        <!--FOOTER-->
+
+        <div style="background-color: #75a542;padding: 0;margin: 0;">
+            <p style="padding: 0;margin: 0;padding-bottom: 18px;color: #a4e65f;padding-top: 20px;text-align: center;">© PlanTitas 2024.<br>Todos los derechos reservados.</p>
+
+
+        </div>
+
+
+</body>
+</html>
